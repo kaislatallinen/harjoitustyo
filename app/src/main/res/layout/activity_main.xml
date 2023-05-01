@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/siirra"
+        android:layout_width="235dp"
+        android:layout_height="65dp"
+        android:onClick="switchToTransferLutemon"
+        android:text="Siirrä lutemoneja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/listaa"
+        android:layout_width="235dp"
+        android:layout_height="65dp"
+        android:onClick="switchToListLutemons"
+        android:text="listaa lutemoneja"
+        app:layout_constraintBottom_toTopOf="@+id/siirra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lisaa" />
+
+    <Button
+        android:id="@+id/taistele"
+        android:layout_width="235dp"
+        android:layout_height="65dp"
+        android:onClick="switchToFightLutemon"
+        android:text="taisteluareenalle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lisaa" />
+
+    <Button
+        android:id="@+id/lisaa"
+        android:layout_width="235dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="140dp"
+        android:onClick="switchToAddLutemon"
+        android:text="Lisää uusi Lutemon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
